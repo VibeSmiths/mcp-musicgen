@@ -1,4 +1,7 @@
 FROM pytorch/pytorch:2.4.0-cuda12.1-cudnn9-runtime
+LABEL org.opencontainers.image.source="https://github.com/VibeSmiths/mcp-musicgen" \
+      org.opencontainers.image.description="GPU service: musicgen" \
+      org.opencontainers.image.licenses="MIT"
 
 ENV DEBIAN_FRONTEND=noninteractive
 ENV TZ=UTC
