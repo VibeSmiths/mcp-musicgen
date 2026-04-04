@@ -12,5 +12,6 @@ permissions:
 jobs:
   docker:
     uses: VibeSmiths/.github/.github/workflows/docker-build.yml@main
+    secrets: inherit
     with:
       image-name: mcp-musicgen
