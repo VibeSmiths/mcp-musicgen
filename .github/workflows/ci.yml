@@ -20,9 +20,10 @@ jobs:
     with:
       image-name: mcp-musicgen
 
-  docker-rocm:
-    uses: VibeSmiths/.github/.github/workflows/docker-build.yml@main
-    secrets: inherit
-    with:
-      image-name: mcp-musicgen-rocm
-      dockerfile: Dockerfile.rocm
+  # ROCm builds are heavy — uncomment when needed
+  # docker-rocm:
+  #   uses: VibeSmiths/.github/.github/workflows/docker-build.yml@main
+  #   secrets: inherit
+  #   with:
+  #     image-name: mcp-musicgen-rocm
+  #     dockerfile: Dockerfile.rocm
