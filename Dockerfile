@@ -22,4 +22,8 @@ COPY main.py .
 ENV MODELS_DIR=/app/models
 EXPOSE 8001
 
+LABEL org.opencontainers.image.source="https://github.com/VibeSmiths/mcp-musicgen"
+LABEL org.opencontainers.image.description="AI music generation service via AudioCraft"
+LABEL org.opencontainers.image.licenses="MIT"
+
 CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8001"]
