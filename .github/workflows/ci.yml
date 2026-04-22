@@ -15,14 +15,14 @@ permissions:
 
 jobs:
   docker-nvidia:
-    uses: VibeSmiths/.github/.github/workflows/docker-build.yml@main
+    uses: Mossworks-Labs/.github/.github/workflows/docker-build.yml@main
     secrets: inherit
     with:
       image-name: mcp-musicgen
 
   # ROCm builds are heavy — uncomment when needed
   # docker-rocm:
-  #   uses: VibeSmiths/.github/.github/workflows/docker-build.yml@main
+  #   uses: Mossworks-Labs/.github/.github/workflows/docker-build.yml@main
   #   secrets: inherit
   #   with:
   #     image-name: mcp-musicgen-rocm

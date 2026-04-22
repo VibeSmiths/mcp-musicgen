@@ -2,7 +2,7 @@
 
 GPU service for text-to-music generation via Meta AudioCraft (CUDA + ROCm).
 
-Part of the [CRAFT](https://github.com/VibeSmiths/VideoIdeas) content studio.
+Part of the [CRAFT](https://github.com/Mossworks-Labs/craft) content studio.
 
 ## API
 
